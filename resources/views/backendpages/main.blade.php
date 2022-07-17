@@ -7,7 +7,7 @@
             <li class="breadcrumb-item"><a href="{{route('admin.dashbord')}}">Dashboard</a></li>
             <li class="breadcrumb-item active">Main</li>
         </ol>
-        <form action="" method="post" enctype="multipart/form-data">
+        <form action="{{route('admin.main.update')}}" method="post" enctype="multipart/form-data">
             @csrf
             {{method_field('PUT')}}
             <div class="row">

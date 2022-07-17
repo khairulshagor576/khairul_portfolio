@@ -9,3 +9,4 @@ Route::get('/', [frontendBackendController::class,'frontend']);
 
 Route::get('/dashbord', [frontendBackendController::class,'backend'])->name('admin.dashbord');
 Route::get('/main',[MainController::class,'index'])->name('admin.main');
+Route::put('/main/update',[MainController::class,'update'])->name('admin.main.update');
