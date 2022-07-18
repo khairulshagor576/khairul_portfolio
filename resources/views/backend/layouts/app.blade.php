@@ -45,11 +45,19 @@
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
-            <!-- Nav Item - Main -->
+            <!-- Main Item -->
             <li class="nav-item active">
                 <a class="nav-link" href="{{route('admin.main')}}">
                     <i class="fas fa-home"></i>
                     <span>Main</span></a>
+            </li>
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+            <!--About Me -->
+            <li class="nav-item active">
+                <a class="nav-link" href="{{route('admin.aboutme')}}">
+                    <i class="fas fa-info-circle"></i>
+                    <span>About Me</span></a>
             </li>
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
