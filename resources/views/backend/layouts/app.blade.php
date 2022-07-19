@@ -62,6 +62,15 @@
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
+            <!--About Me -->
+            <li class="nav-item active">
+                <a class="nav-link" href="#">
+                    <i class='fas fa-graduation-cap'></i>
+                    <span>Education & Exprience</span></a>
+            </li>
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
@@ -107,6 +116,7 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
+                    @include('alert.messages')
                     @yield('content')
                 </div>
                 <!-- /.container-fluid -->

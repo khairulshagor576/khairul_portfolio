@@ -107,19 +107,19 @@
             </div>
             <div class="row align-items-center">
                 <div class="col-lg-5 pb-4 pb-lg-0">
-                    <img class="img-fluid rounded w-100" src="{{asset('img/profile.jpg')}}" alt="">
+                    <img class="img-fluid rounded w-100" src="{{url($aboutme->profile_image)}}" alt="">
                 </div>
                 <div class="col-lg-7">
-                    <h3 class="mb-4">Web Developer</h3>
-                    <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum. Amet dolor stet lorem diam dolor justo et dolor dolor dolor</p>
+                    <h3 class="mb-4">{{$aboutme->title}}</h3>
+                    <p>{{$aboutme->description}}</p>
                     <div class="row mb-3">
                         <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">Mohammad Khairul Islam</span></h6></div>
                         <div class="col-sm-6 py-2"><h6>Birthday: <span class="text-secondary">31 Dec 1992</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Degree: <span class="text-secondary">PGDIT(IT)</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Experience: <span class="text-secondary">04 Years</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Phone: <span class="text-secondary">+8801703302740</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Degree: <span class="text-secondary">{{$aboutme->degree}}</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Experience: <span class="text-secondary">{{$aboutme->exprience}}</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Phone: <span class="text-secondary">{{$aboutme->mobile_number}}</span></h6></div>
                         <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">khairulsagor567@gmail.com</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Address: <span class="text-secondary">289,Jhilpar,Pirerbag,Mirpur,Dhaka.</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Address: <span class="text-secondary">{{$aboutme->address}}</span></h6></div>
                         <div class="col-sm-6 py-2"><h6>Freelance: <span class="text-secondary">Available</span></h6></div>
                     </div>
                     <a href="" class="btn btn-outline-primary mr-4">Hire Me</a>
