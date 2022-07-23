@@ -61,16 +61,22 @@
             </li>
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
-
-            <!--About Me -->
-            <li class="nav-item active">
-                <a class="nav-link" href="#">
+            
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
                     <i class='fas fa-graduation-cap'></i>
-                    <span>Education & Exprience</span></a>
+                    <span>Education & Exprience</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Education & Exprience:</h6>
+                        <a class="collapse-item" href="{{route('admin.educationexprience.create')}}">Education Create</a>
+                        <a class="collapse-item" href="cards.html">Exprience List</a>
+                    </div>
+                </div>
             </li>
-            <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
-
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
