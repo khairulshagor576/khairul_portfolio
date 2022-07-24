@@ -45,7 +45,7 @@
                                             <td>{{$education->year_start}}</td>
                                             <td>{{$education->year_end}}</td>
                                             <td>{{$education->description}}</td>
-                                            <td>
+                                            <td class="text-center">
                                                 <a data-toggle="modal" data-target="#educationstaticBackdrop" class="btn btn-primary btn-sm" href="#"><i class="fas fa-edit"></i></a>
                                                 <a class="btn btn-danger btn-sm" href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
                                             </td>
@@ -97,8 +97,8 @@
                                             <td>{{$exprience->exp_year_start}}</td>
                                             <td>{{$exprience->exp_year_end}}</td>
                                             <td>{{$exprience->exp_description}}</td>
-                                            <td>
-                                                <a data-toggle="modal" data-target="#staticBackdropexprience" class="btn btn-primary btn-sm" href="#"><i class="fas fa-edit"></i></a>
+                                            <td class="text-center">
+                                                <a data-toggle="modal" data-target="#staticBackdropexprience" class="btn btn-primary btn-sm" href="{{url('educationexprience/edit/',['exprience_id'=>$exprience->id])}}"><i class="fas fa-edit"></i></a>
                                                 <a class="btn btn-danger btn-sm" href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
                                             </td>
                                         </tr>

@@ -26,3 +26,4 @@ EDUCATION AND EXPRICENCE
 Route::get('/educationexprience/create',[educationExprienceController::class,'create'])->name('admin.educationexprience.create');
 Route::post('/educationexprience/store',[educationExprienceController::class,'store'])->name('admin.educationexprience.store');
 Route::get('/educationexprience/list',[educationExprienceController::class,'show'])->name('admin.educationexprience.list');
+Route::get('/educationexprience/edit/{id}',[educationExprienceController::class,'edit'])->name('admin.educationexprience.edit');

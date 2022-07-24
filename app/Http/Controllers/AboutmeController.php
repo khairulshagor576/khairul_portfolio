@@ -37,7 +37,7 @@ class AboutmeController extends Controller
       {
         $img_file = $request->file('profile_image');
         $img_file->storeAs('public/img/','profile_image.'.$img_file->getClientOriginalExtension());
-        $about_me->bc_image='storage/img/profile_image.'.$img_file->getClientOriginalExtension();
+        $about_me->profile_image='storage/img/profile_image.'.$img_file->getClientOriginalExtension();
       }
         $about_me->save();
     }
