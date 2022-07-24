@@ -15,7 +15,7 @@ class educationExprienceController extends Controller
      */
     public function index()
     {
-        
+
     }
 
     /**
@@ -36,19 +36,6 @@ class educationExprienceController extends Controller
      */
     public function store(Request $request)
     {
-        //return $request;
-        // $request->validate([
-        //     'degree'=>'required',
-        //     'designation'=>'required',
-        //     'institute'=>'required',
-        //     'company_name'=>'required',
-        //     'year_start'=>'required',
-        //     'exp_year_start'=>'required',
-        //     'year_end'=>'required',
-        //     'exp_year_end'=>'required',
-        //     'description'=>'required',
-        //     'exp_description'=>'required'
-        // ]);
 
         if($request->company_name!="")
         {
@@ -71,15 +58,10 @@ class educationExprienceController extends Controller
         {
              $request->validate([
             'degree'=>'required',
-            'designation'=>'required',
             'institute'=>'required',
-            'company_name'=>'required',
             'year_start'=>'required',
-            'exp_year_start'=>'required',
             'year_end'=>'required',
-            'exp_year_end'=>'required',
-            'description'=>'required',
-            'exp_description'=>'required'
+            'description'=>'required'
         ]);
             $education = new education();
 
@@ -91,9 +73,6 @@ class educationExprienceController extends Controller
             $education->save();
         }
 
-        
-
-        
     }
 
     /**
@@ -102,9 +81,12 @@ class educationExprienceController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show()
     {
-        //
+       $educations = education::all();
+       $expriences = exprience::all();
+
+       return view('backendpages.exprience_education.exprienceeduaction_list',['educations'=>$educations],['expriences'=>$expriences]);
     }
 
     /**

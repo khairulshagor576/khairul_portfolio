@@ -5,7 +5,7 @@
         <h1 class="mt-4">Education & Exprience</h1>
         <ol class="breadcrumb mb-4">
             <li class="breadcrumb-item"><a href="{{route('admin.dashbord')}}">Dashboard</a></li>
-            <li class="breadcrumb-item active">Education & Exprience</li>
+            <li class="breadcrumb-item active">Education & Exprience Create</li>
         </ol>
         <form action="{{route('admin.educationexprience.store')}}" method="post" enctype="multipart/form-data">
             @csrf
